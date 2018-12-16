@@ -56,7 +56,7 @@ class ViMbAdmin_Dovecot
         if( $retval != 0 )
             throw new ViMbAdmin_Exception( sprintf( _( 'Error executing Dovecot password command: ' . $cmd ) ) );
         
-        return trim( substr( $a, strlen( $scheme ) + 2 ) );
+        return trim( $a );
     }
 
     /**
